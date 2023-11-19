@@ -8,7 +8,14 @@ const cn = {
   Error: {
     Unauthorized: isApp
       ? "检测到无效 API Key，请前往[设置](/#/settings)页检查 API Key 是否配置正确。"
-      : "访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码，或者在[设置](/#/settings)页填入你自己的 OpenAI API Key。",
+      : `访问密码不正确或为空前往[登录](/#/auth)页输入正确的访问密码，或者在[设置](/#/settings)页填入你自己的 OpenAI API Key。
+      为了防止公益接口被滥用，请前往公众号:
+      [陈大发随笔](https://www.canterdanai.top/128.html)  回复 密码 可以免费获取密码，然后点击左下角[设置](/#/settings)按钮输入密码后解锁**免费使用**，输入过密码或者APIKey的可忽略。
+          
+          **提问:** 你可以在这里放一些常用问题吗?
+          **回答:** 当然可以，还可以在这里放一些问题解答，太棒啦!
+          常见问题与使用说明点击查看，👉 **[文档教程链接](https://www.canterdanai.top/128.html)** 
+          卡顿或提示异常?可能是用户量太大或者公益接口已用尽可等管理员恢复`,
   },
   Auth: {
     Title: "需要密码",
@@ -342,7 +349,14 @@ const cn = {
   },
   Store: {
     DefaultTopic: "新的聊天",
-    BotHello: "有什么可以帮你的吗",
+    BotHello: `访问密码不正确或为空前往[登录](/#/auth)页输入正确的访问密码，或者在[设置](/#/settings)页填入你自己的 OpenAI API Key。
+    为了防止公益接口被滥用，请前往公众号:
+    [陈大发随笔](https://www.canterdanai.top/128.html)  回复 密码 可以免费获取密码，然后点击左下角[设置](/#/settings)按钮输入密码后解锁**免费使用**，输入过密码或者APIKey的可忽略。
+        
+        **提问:** 你可以在这里放一些常用问题吗?
+        **回答:** 当然可以，还可以在这里放一些问题解答，太棒啦!
+        常见问题与使用说明点击查看，👉 **[文档教程链接](https://www.canterdanai.top/128.html)** 
+        卡顿或提示异常?可能是用户量太大或者公益接口已用尽可等管理员恢复`,
     Error: "出错了，稍后重试吧",
     Prompt: {
       History: (content: string) => "这是历史聊天总结作为前情提要：" + content,
